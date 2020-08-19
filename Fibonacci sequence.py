@@ -10,7 +10,7 @@
 # In[2]:
 
 
-# create a list of the first nineteen thousand numbers of the fibonacci sequence 
+# create a list of the first twenty thousand numbers of the fibonacci sequence 
 
 
 # In[3]:
@@ -22,7 +22,7 @@ fsequence = [0, 1]
 # In[4]:
 
 
-while fsequence[-1] <= 100 ** 2000:
+while len(fsequence) < 20000:
     x = fsequence[-1] + fsequence[-2]
     fsequence.append(x)
 
@@ -41,37 +41,7 @@ def fibonacci(x):
         if x >= 0 and x <= 19143 :
             print(fsequence[0:x])
         else:
-            print('Input a positive integer less than 19143')
+            print('Input a positive integer less than twenty thousand (20000)')
     else:
         print('Input a positive integer')
-
-
-# In[7]:
-
-
-fibonacci(200000)
-
-
-# In[8]:
-
-
-fibonacci('two')
-
-
-# In[9]:
-
-
-fibonacci(0)
-
-
-# In[10]:
-
-
-fibonacci(1.0)
-
-
-# In[11]:
-
-
-fibonacci(-34)
 
