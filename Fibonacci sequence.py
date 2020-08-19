@@ -45,3 +45,4 @@ def fibonacci(x):
     else:
         print('Input a positive integer')
 
+fibonacci(300)
