@@ -38,7 +38,7 @@ while len(fsequence) < 20000:
 
 def fibonacci(x):
     if type(x) == int:
-        if x >= 0 and x <= 19143 :
+        if x >= 0 and x <= 20000 :
             print(fsequence[0:x])
         else:
             print('Input a positive integer less than twenty thousand (20000)')
